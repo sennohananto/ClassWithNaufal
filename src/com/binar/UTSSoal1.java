@@ -50,7 +50,5 @@ public class UTSSoal1 {
             }
             System.out.println();
         }
-
-
     }
 }
