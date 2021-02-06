@@ -33,17 +33,46 @@ public class MainOOP {
         // c. Urutan tipe data parameter sama
     //Inheritance
     //Encapsulation
-    //Access Modifier
+    //Access Modifier (Public, Private, Protected, Default)
+
+
+    //Overriding (Untuk menimpah suatu method)
+    //Polymorphism (Satu Object bisa melakukan aksi yang berbeda-beda)
+        //Dynamic Polymorphism -> Overloading
+        //Static Polymorphism -> Overriding
+
+    // Abstract Class
+        // Class yang memiliki method Abstract
+        // tidak bisa dibuat objectnya / tidak bisa di instansiasi
+        // Untuk menggunakan Abstract Class wajib di turunkan / extend dari kelas lain
 
     public static void main(String[] args) {
-        Manusia seorangSenno = new Manusia("Senno","Programmer","Banten",23);
+//        Manusia seorangSenno = new Manusia("Senno","Programmer","Banten",23);
+//
+//        seorangSenno.berjalan();
+//
+//        seorangSenno.memakan();
+//        seorangSenno.memakan(3);
+//        seorangSenno.memakan("Sate");
+//        seorangSenno.memakan(7,"Sop iga");
 
-        seorangSenno.berjalan();
+        //Deklarasi Object | Instantitation (Pembuatan suatu Object)
+//        Mahasiswa mhs = new Mahasiswa("Naufal","Mahasiswa","Bogor");
+//        mhs.memakan(3);
+//        mhs.memakan("Bakso");
+//        mhs.memakan(3,"Sop Buntut");
+//
+//        mhs.berjalan();
 
-        seorangSenno.memakan();
-        seorangSenno.memakan(3);
-        seorangSenno.memakan("Sate");
-        seorangSenno.memakan(7,"Sop iga");
+        PersegiPanjang persegiPanjang = new PersegiPanjang(6,2);
+        System.out.println("Luas Persegi Panjang : "+ persegiPanjang.hitungLuas());
+        System.out.println("Keliling Persegi Panjang : "+ persegiPanjang.hitungKeliling());
+
+        Persegi persegi = new Persegi(5);
+        System.out.println("Luas Persegi : "+persegi.hitungLuas());
+        System.out.println("Keliling Persegi : "+persegi.hitungKeliling());
+
+        Manusia manusiaLagi = new Mahasiswa("Senno","Mhs","Banten");
     }
 
     //API Dibuat pakai Golang

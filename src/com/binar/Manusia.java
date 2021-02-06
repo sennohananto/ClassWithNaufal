@@ -3,7 +3,7 @@ package com.binar;
 public class Manusia {
     //Atribut
     protected String nama, pekerjaan, alamat;
-    private int umur;
+    protected int umur;
 
     //Constructor Method
     //Method yang dijalankan untuk membuat object
