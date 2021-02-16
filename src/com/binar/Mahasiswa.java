@@ -1,8 +1,6 @@
 package com.binar;
 
-public class Mahasiswa extends Manusia {
-
-
+public class Mahasiswa extends Manusia implements AnakYangBerbakti {
     public Mahasiswa(String nama, String pekerjaan, String alamat){
         super.nama = nama;
         super.pekerjaan = pekerjaan;
@@ -19,5 +17,18 @@ public class Mahasiswa extends Manusia {
     }
 
 
+    @Override
+    public void membantuIbu() {
 
+    }
+
+    @Override
+    public void tidakKorupsi() {
+
+    }
+
+    @Override
+    public void membantuAyah() {
+
+    }
 }

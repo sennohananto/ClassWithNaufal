@@ -43,6 +43,10 @@ public class Manusia {
         System.out.println(nama +" sedang makan"+ namaSop + " sebanyak "+ jumlahMangkok);
     }
 
+    public void belajar(){
+        System.out.println("Belajar seperti manusia pada umumnya");
+    }
+
     //Method dianggap sama JIKA
     //1. nama method sama persis
     //2. parameter sama persis
